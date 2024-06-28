@@ -5,12 +5,11 @@ def main():
     total = 0
     numbers = []
 
-    while total <=100:
-        num = random.randint(0,100)
-        if total + num > 100:
-            break       
+    while total <100:
+        num = random.randint(0,100)    
         numbers.append(num)
-        total += num
+        total = total + num
+    total = total - num
 
         
 
